@@ -3,28 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>javascripts</title>
+    <link rel="stylesheet" href="/if/styles.css";
+    <title>time-based-greetings</title>
 </head>
 <body>
-    <h1>javascripts</h1>
-    <h2>Time-based greeting</h2>
-    
+
+    <p id="greetingMessage">Greeting Message comes here</p>
+    <p id="currentTime">shows current time here</p>
 
         <script>
 
             const hour = new Date().getHours();
             let greeting;
 
-            if (hour < 10) {
+            if (hour >= 0 && hour < 5) {
+                greeting = "Zzz"
+            }
+            else if (hour < 10) {
                 greeting = "Guten Morgen";
-            } else if(hour < 20) {
+            } 
+            else if (hour < 20) {
                 greeting = "Guten Tag";
             }
             else {
                 greeting = "Guten Abend";
             }
 
-            document.write(greeting);
+            document.getElementById("greetingMessage").textContent = greeting;
+
+            document.getElementById("currentTime").textContent ="Aktuelle Stunde:" +hour;
 
 
         
