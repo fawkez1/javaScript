@@ -10,24 +10,29 @@
 
     <h1>JavaScript Lessons</h1>
     
-    <p id="demo"></p>
+    <p id="day">Guten Tag</p>
+
     <button>Komm klick</button>
+
     <div id="badMessage"></div>
+
     
 
     <script>
     
+        // Buttom zum abhauen
         const button = document.querySelector("button");
-
         function greet() {
             const name = prompt("Sag halt deinen Namen");
             const greeting = document.querySelector ("#badMessage");
             greeting.textContent = `Komm ${name}, hau ab!`;
-
-        }
-
+        };
         button.addEventListener("click", greet);
     
+        // Begruessung je nach Tageszeit
+        if (new Date().getHours() >= 18) {
+                document.getElementById("day").innerHTML = "Guten Abend";  
+        };
 
 
 
