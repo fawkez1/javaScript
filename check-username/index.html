@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thenameofjs</title>
+</head>
+<body>
+
+    <script>
+
+      let login = prompt("Username?");
+      let message = (login == "Employee") ? alert("Hello Employee") : 
+                    (login == "Director") ? alert("Greetings Director") :
+                    (login == "" || login == null) ? alert("No login") : 
+                    alert("wrong user");
+
+    </script>
+    
+</body>
+</html>
