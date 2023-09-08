@@ -1,0 +1,22 @@
+.section-one{
+    height: 800px;
+    width: 500px;
+
+}
+
+.flex-container{
+    height: 350px;
+    width: 400px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    align-items:normal
+}
+
+.Day{
+    background-color: lightblue;
+    height: 30px;
+    width: 50px;
+    margin: 2px;
+}
