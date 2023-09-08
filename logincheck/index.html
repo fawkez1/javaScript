@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logincheck</title>
+</head>
+<body>
+
+    <script>
+
+
+        const userName = prompt("Who's there?");
+        const AdminPW = "TheMaster";
+    
+        
+
+    
+        //checks if username is exactly "Admin". If true, then checks for passwort.
+        if (userName === "Admin") {
+            const enteredPassword = prompt("Hello Admin, please enter your password");
+
+            if (enteredPassword === AdminPW) {
+                alert("Welcome!");
+            }
+            else {
+                alert("Wrong Password, get lost");
+            }
+        }
+        //If username is incorrect or action action gets cancelled
+
+        if (userName === null) {
+            alert("Login cancelled by user")
+        }
+        else if (!(userName === "Admin")) {
+            alert("I don't know you");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
