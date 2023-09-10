@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Function library example</title>
+  </head>
+<body>
+    <input class="inputBox" type="text" placeholder="Type in your favorite type of animal...">
+    <p class="outputBox"></p>
+<style>
+    .inputBox {
+        margin: 10px;
+        font-size: 15px;
+        height: 50px;
+        width: 400px;
+    }
+    .outputBox {
+        margin: 10px;
+        font-size: 15px;
+        height: 50px;
+        width: 400px;
+        background-color: grey;
+    }
+</style>
+
+<script>
+    /*
+=1. input-box bauen
+=2. ouput-box bauen
+3. eventlistener mit input-box verbinden
+4. wert von input-box in variable speichern
+5. function erstellen, die den input-box-wert nimmt
+   und ihn in die function einbindet, die das ergebnis hat mit "(input-box-wert) is my favorite animal"
+6. dieses ergebnis in der output box praesentieren.
+*/
+
+    const inputBoxValue = document.querySelector(".inputBox");
+    const outputBoxValue = document.querySelector(".outputBox");
+
+    inputBoxValue.addEventListener("change", function () {
+        const inputAnimal = inputBoxValue.value;
+        const result = favoriteAnimal(inputAnimal);
+        outputBoxValue.textContent = result;
+    })
+
+    function favoriteAnimal(animal) {
+        return animal + " is my favorite animal";
+    }
+
+</script>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+</body>
+</html>
