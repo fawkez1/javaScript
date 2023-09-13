@@ -6,7 +6,7 @@
     <title>Function library example</title>
   </head>
 <body>
-    <input class="inputBox" type="text" placeholder="Type in your favorite type of animal...">
+    <input class="inputBox" type="text" placeholder="Type here...">
     <p class="outputBox"></p>
 <style>
     .inputBox {
@@ -25,28 +25,47 @@
 </style>
 
 <script>
-    /*
-=1. input-box bauen
-=2. ouput-box bauen
-3. eventlistener mit input-box verbinden
-4. wert von input-box in variable speichern
-5. function erstellen, die den input-box-wert nimmt
-   und ihn in die function einbindet, die das ergebnis hat mit "(input-box-wert) is my favorite animal"
-6. dieses ergebnis in der output box praesentieren.
-*/
 
-    const inputBoxValue = document.querySelector(".inputBox");
-    const outputBoxValue = document.querySelector(".outputBox");
+     function min(a, b){
+        return (a > b) ? b : a;
+     }
+     /*
+     let x = prompt("type in your number");
+     let n = prompt("type the number of repetitions");
+     let answer = alert(pow(x, n));
 
-    inputBoxValue.addEventListener("change", function () {
-        const inputAnimal = inputBoxValue.value;
-        const result = favoriteAnimal(inputAnimal);
-        outputBoxValue.textContent = result;
-    })
 
-    function favoriteAnimal(animal) {
-        return animal + " is my favorite animal";
+     function pow(x, n){
+        let result = 1;
+        for (let i = 0; i < n; i++){
+            result *= x;
+        }
+        return result;
+     }
+*/ 
+
+    //1
+     function add7 (x) {
+        result = x + 7;
+        return result;
     }
+    //2
+    function multiply (x, y) {
+        result = x * y;
+        return result;
+    }
+    //3
+    function lastLetter (input) {
+        let length = input.length;
+        let result = input[length -1];
+
+        return result;
+    }
+
+
+
+
+
 
 </script>
 
